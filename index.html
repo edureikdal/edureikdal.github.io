@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo Reikdal Guimaraes — EE @ UIUC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAV — repeated on every page; active page gets nav-link--active
+       ═══════════════════════════════════════════════════════ -->
+  <header style="background-color: var(--navy);" class="px-6 py-4">
+    <div class="max-w-3xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="text-white font-semibold text-sm hover:opacity-80">
+        Eduardo Reikdal Guimarães
+      </a>
+      <nav class="flex gap-6 text-sm">
+        <a href="index.html" class="nav-link nav-link--active">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="off-duty.html" class="nav-link">Hobbies</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO — headline, tagline, CTA buttons, headshot
+       ═══════════════════════════════════════════════════════ -->
+  <section style="background-color: var(--navy);" class="px-6 pt-16 pb-28 border-t border-white/10">
+    <div class="max-w-3xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-10">
+
+      <!-- Left: text content -->
+      <div class="flex-1">
+        <h1 class="text-4xl sm:text-5xl font-semibold text-white leading-tight mb-6">
+          Eduardo Reikdal Guimarães
+        </h1>
+        <p class="text-base mb-10 leading-relaxed" style="color: rgba(255,255,255,0.6);">
+          Electrical Engineering Student at the University of Illinois Urbana-Champaign
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="assets/resume.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
+          <a href="https://github.com/edureikdal" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/eduardo-reikdal-guimaraes/" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: headshot -->
+      <!-- [REPLACE src with your actual headshot image path, e.g. assets/images/headshot.jpg] -->
+      <div class="flex-shrink-0 flex justify-center sm:justify-end">
+        <img
+          src="assets/images/headshot.jpg"
+          alt="Eduardo Reikdal Guimarães"
+          class="w-44 h-44 sm:w-52 sm:h-52 rounded-full object-cover border-2 border-white/20"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       BIO — text alongside photo spots
+       ═══════════════════════════════════════════════════════ -->
+  <section id="bio" class="max-w-3xl mx-auto px-6 py-16 border-t border-gray-100">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">About Me</h2>
+    <div class="flex flex-col sm:flex-row gap-10">
+
+      <!-- Bio text -->
+      <div class="space-y-4 flex-1">
+        <p class="text-base leading-relaxed text-gray-700">
+          Hello I am Eduardo. I am originally from São Paulo, Brazil, and currently based in Milwaukee, Wisconsin.
+          I'm an incoming sophomore at the University of Illinois Urbana-Champaign studying Electrical Engineering.
+        </p>
+        <p class="text-base leading-relaxed text-gray-700">
+          This summer, I am interning at Berco of America, a thyssenkrupp subsidiary in Waukesha, WI, where I work with the process engineering and quality teams on manufacturing operations.
+        </p>
+        <p class="text-base leading-relaxed text-gray-700">
+          Professionally, I'm drawn to high-stakes hardware problems where the boundaries of what's possible are constantly being pushed.
+          I'm especially interested in healthcare technology, robotics and automation, and the intersection of silicon and photonics.
+          I'm still early in defining the exact path I want to pursue, but I'm motivated by opportunities to build impactful, real-world systems.
+        </p>
+        <p class="text-base leading-relaxed text-gray-700">
+          Outside of engineering, I mentor an FTC robotics team, play various musical instruments, and enjoy playing pickleball, golf, and pick-up soccer with friends.
+          I am also currently training for my first half marathon.
+        </p>
+      </div>
+
+      <!-- Photo spots alongside bio -->
+      <!-- [REPLACE src values with actual image paths] -->
+      <div class="flex-shrink-0 flex flex-row sm:flex-col gap-3 sm:w-44">
+        <img
+          src="assets/images/about-photo-1.jpg"
+          alt="Photo of Eduardo"
+          class="flex-1 sm:flex-none w-full aspect-square object-cover bg-gray-100"
+        />
+        <img
+          src="assets/images/about-photo-2.jpg"
+          alt="Photo of Eduardo"
+          class="flex-1 sm:flex-none w-full aspect-square object-cover bg-gray-100"
+        />
+        <img
+          src="assets/images/about-photo-3.jpg"
+          alt="Photo of Eduardo"
+          class="flex-1 sm:flex-none w-full aspect-square object-cover bg-gray-100"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background-color: var(--navy);" class="px-6 py-6 mt-8">
+    <div class="max-w-3xl mx-auto text-xs" style="color: rgba(255,255,255,0.4);">
+      &copy; 2026 Eduardo Reikdal Guimarães
+    </div>
+  </footer>
+
+</body>
+</html>

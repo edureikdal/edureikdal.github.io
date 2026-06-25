@@ -1,0 +1,131 @@
+/* ═══════════════════════════════════════════════════════════
+   Shared styles — supplements Tailwind CDN utilities
+   Colors: Navy (#13294B) primary · White secondary · Illini Orange (#E84A27) accent (hover/CTA only)
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --navy:  #13294B;
+  --orange: #E84A27;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Navigation ─────────────────────────────────────────────
+   Default: dim white  |  Hover: orange  |  Active: full white
+   ─────────────────────────────────────────────────────────── */
+.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-link:hover {
+  color: var(--orange);
+}
+.nav-link--active {
+  color: #ffffff;
+}
+
+/* ── CTA Buttons ────────────────────────────────────────────
+   Used only on the hero section of index.html.
+   Orange appears on hover — the "unique scenario" for the accent color.
+   ─────────────────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-block;
+  padding: 0.6rem 1.375rem;
+  background: #ffffff;
+  color: var(--navy);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.btn-primary:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.375rem;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+.btn-secondary:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+/* ── Project image / card ───────────────────────────────────
+   16:9 ratio matches the 1920×1080 photos that will replace placeholders.
+   ─────────────────────────────────────────────────────────── */
+.project-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background-color: #d1d5db;
+  display: block;
+}
+
+.card-link {
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.card-link:hover {
+  color: var(--orange);
+}
+
+/* ── Contact link ───────────────────────────────────────────*/
+.contact-link {
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.contact-link:hover {
+  color: var(--orange);
+}
+
+/* ── Leadership / writing cards ─────────────────────────────
+   Shared by both the Leadership section (index.html) and
+   the Creative Writing section (off-duty.html).
+   ─────────────────────────────────────────────────────────── */
+.leadership-card {
+  border: 1px solid #e5e7eb;
+  padding: 1.25rem 1.5rem;
+}
+.leadership-card__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.leadership-card__body {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.65;
+}
+
+/* ── Embed placeholders ─────────────────────────────────────
+   Used in off-duty.html for audio and video slots.
+   Replace the inner placeholder text with real <audio>/<video>/iframe.
+   ─────────────────────────────────────────────────────────── */
+.embed-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f9fafb;
+  border: 2px dashed #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 0.8125rem;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Eduardo Reikdal Guimaraes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- NAV -->
+  <header style="background-color: var(--navy);" class="px-6 py-4">
+    <div class="max-w-3xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="text-white font-semibold text-sm hover:opacity-80">Eduardo Reikdal Guimarães</a>
+      <nav class="flex gap-6 text-sm">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link nav-link--active">Projects</a>
+        <a href="off-duty.html" class="nav-link">Hobbies</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div style="background-color: var(--navy);" class="px-6 pt-10 pb-14 border-t border-white/10">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-3xl font-semibold text-white mb-2">Projects</h1>
+      <p class="text-sm" style="color: rgba(255,255,255,0.5);">
+        Hardware, software, and everything in between.
+      </p>
+    </div>
+  </div>
+
+  <!-- PROJECTS SECTION -->
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Project Card: Robotic Arm -->
+      <div class="flex flex-col">
+        <img
+          src="assets/images/placeholder.jpg"
+          alt="3-DOF IMU Leader-Follower Robotic Arm"
+          class="project-img mb-4"
+        />
+        <h3 class="font-medium mb-1">3-DOF Robotic Arm</h3>
+        <p class="text-sm text-gray-500 mb-3 leading-relaxed">
+          A leader-follower arm pair using ESP32, STM32, and MPU-6050 IMUs to map joint angles
+          in real time. Built on a custom KiCad PCB with 3D-printed structure.
+        </p>
+        <a href="projects/robotic-arm.html" class="text-sm mt-auto card-link">Read More →</a>
+      </div>
+
+      <!-- Project Card: Mail Notifier -->
+      <div class="flex flex-col">
+        <img
+          src="assets/images/placeholder.jpg"
+          alt="IoT Mail Notifier"
+          class="project-img mb-4"
+        />
+        <h3 class="font-medium mb-1">IoT Mail Notifier</h3>
+        <p class="text-sm text-gray-500 mb-3 leading-relaxed">
+          An ESP32-based device that detects mail delivery and sends a WiFi notification to your phone.
+          Low-power design with simple sensor integration.
+        </p>
+        <a href="projects/mail-notifier.html" class="text-sm mt-auto card-link">Read More →</a>
+      </div>
+
+      <!-- Project Card: FTC Scouting -->
+      <div class="flex flex-col">
+        <img
+          src="assets/images/placeholder.jpg"
+          alt="FTC Robotics Monte Carlo Scouting System"
+          class="project-img mb-4"
+        />
+        <h3 class="font-medium mb-1">FTC Monte Carlo Scouting</h3>
+        <p class="text-sm text-gray-500 mb-3 leading-relaxed">
+          A Python-based Monte Carlo simulation system for predicting FTC match outcomes.
+          Helped my team qualify for the World Championship twice during high school.
+        </p>
+        <a href="projects/ftc-scouting.html" class="text-sm mt-auto card-link">Read More →</a>
+      </div>
+
+      <!-- Project Card: Applause Meter -->
+      <div class="flex flex-col">
+        <img
+          src="assets/images/placeholder.jpg"
+          alt="Applause Meter — ECE 110 Project"
+          class="project-img mb-4"
+        />
+        <h3 class="font-medium mb-1">Applause Meter</h3>
+        <p class="text-sm text-gray-500 mb-3 leading-relaxed">
+          An ECE 110 course project that measures audience applause volume and displays
+          the intensity level in real time using analog circuitry.
+        </p>
+        <a href="projects/applause-meter.html" class="text-sm mt-auto card-link">Read More →</a>
+      </div>
+
+      <!-- Project Card: ContinuMeds -->
+      <div class="flex flex-col">
+        <img
+          src="assets/images/placeholder.jpg"
+          alt="ContinuMeds — TE200 Project"
+          class="project-img mb-4"
+        />
+        <h3 class="font-medium mb-1">ContinuMeds</h3>
+        <p class="text-sm text-gray-500 mb-3 leading-relaxed">
+          A TE 200 venture project addressing medication continuity for patients transitioning
+          between care settings. Developed business model and market validation strategy.
+        </p>
+        <a href="projects/continumed.html" class="text-sm mt-auto card-link">Read More →</a>
+      </div>
+
+      <!-- Project Card: Mini Guitar Amplifier -->
+      <div class="flex flex-col">
+        <img
+          src="assets/images/placeholder.jpg"
+          alt="Mini Guitar Amplifier"
+          class="project-img mb-4"
+        />
+        <h3 class="font-medium mb-1">Mini Guitar Amplifier</h3>
+        <p class="text-sm text-gray-500 mb-3 leading-relaxed">
+          A hand-built compact guitar amplifier designed and assembled from discrete components.
+          Covers analog signal amplification, tone shaping, and speaker driver circuits.
+        </p>
+        <a href="projects/mini-guitar-amp.html" class="text-sm mt-auto card-link">Read More →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background-color: var(--navy);" class="px-6 py-6 mt-16">
+    <div class="max-w-3xl mx-auto text-xs" style="color: rgba(255,255,255,0.4);">
+      &copy; 2026 Eduardo Reikdal Guimarães
+    </div>
+  </footer>
+
+</body>
+</html>
