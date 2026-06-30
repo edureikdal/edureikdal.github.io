@@ -179,11 +179,25 @@
       mainImg.alt = thumbs[current].alt;
       captionEl.textContent = captions[current] || '';
       thumbs[current].classList.add('thumb-active');
-      thumbs[current].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      scrollThumbIntoView(thumbs[current]);
       resetTimer();
     }
 
     function carouselStep(dir) { carouselGo(current + dir); }
+
+    function scrollThumbIntoView(thumb) {
+      const container = thumb.parentElement;
+      const thumbLeft = thumb.offsetLeft;
+      const thumbRight = thumbLeft + thumb.offsetWidth;
+      const visibleLeft = container.scrollLeft;
+      const visibleRight = visibleLeft + container.clientWidth;
+
+      if (thumbLeft < visibleLeft) {
+        container.scrollTo({ left: thumbLeft, behavior: 'smooth' });
+      } else if (thumbRight > visibleRight) {
+        container.scrollTo({ left: thumbRight - container.clientWidth, behavior: 'smooth' });
+      }
+    }
 
     function resetTimer() {
       clearInterval(timer);
